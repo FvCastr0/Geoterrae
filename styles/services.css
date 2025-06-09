@@ -1,0 +1,46 @@
+.services {
+  margin: 1.5rem 4rem;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: clamp(1.5rem, 2.5dvw, 3rem);
+  font-family: 'Raleway', sans-serif;
+  margin: 2.4rem 0;
+}
+
+.services div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+}
+
+.services div article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  width: 240px;
+  border: 1px solid #A1A1A1;
+  padding: .8rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 3rem;
+}
+
+
+.services div article img {
+  width: 8rem;
+  margin-bottom: .5rem;
+}
+
+.services div article button {
+  padding: .3rem;
+  border-radius: .3rem;
+  border: 1px solid #4B5F44;
+  margin-top: .5rem;
+  cursor: pointer;
+  background-color: #4B5F44;
+  color: white;
+}

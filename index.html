@@ -11,7 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/container.css" />
+    <link rel="stylesheet" href="styles/services.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -19,7 +21,12 @@
       <ul>
         <li><a href="#">Início</a></li>
         <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0"
+            >Contato</a
+          >
+        </li>
       </ul>
     </nav>
 
@@ -40,11 +47,57 @@
           Entre em contato para fazer um orçamento ou faça por aqui!
         </legend>
         <div>
-          <button>Contato</button>
+          <button
+            onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0'"
+          >
+            Contato
+          </button>
           <a href="#">ou clique aqui e preencha um formulário</a>
         </div>
       </article>
       <img src="./assets/img/Illustration.png" alt="Ilustração" />
     </main>
+
+    <section class="services">
+      <h1>Nossos serviços</h1>
+
+      <div>
+        <article>
+          <img
+            src="/assets/img/icons/drill-svgrepo-com.svg"
+            alt="Sondagens Geotécnicas Icone"
+          />
+          <h2>Sondagens Geotécnicas</h2>
+          <button>Saiba mais</button>
+        </article>
+
+        <article>
+          <img
+            src="/assets/img/icons/soil-temperature-svgrepo-com.svg"
+            alt="Ensaios Tecnológicos Icone"
+          />
+          <h2>Ensaios Tecnológicos</h2>
+          <button>Saiba mais</button>
+        </article>
+
+        <article>
+          <img
+            src="/assets/img/icons/soil-svgrepo-com.svg"
+            alt="Projetos Geotécnicos Icone"
+          />
+          <h2>Projetos Geotécnicos</h2>
+          <button>Saiba mais</button>
+        </article>
+
+        <article>
+          <img
+            src="/assets/img/icons/drone-svgrepo-com.svg"
+            alt="Levantamento topográfico Icone"
+          />
+          <h2>Levantamento topográfico</h2>
+          <button>Saiba mais</button>
+        </article>
+      </div>
+    </section>
   </body>
 </html>

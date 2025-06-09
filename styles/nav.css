@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .5rem 4rem;
+}
+
+.navbar img {
+  width: 13rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #393A34;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
