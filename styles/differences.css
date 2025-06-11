@@ -1,0 +1,79 @@
+.differences {
+  background-color: #f8f3d9;
+  padding: 4rem;
+  margin-top: 4rem;
+}
+
+.differences div {
+  padding: 2rem;
+  background-color: white;
+  border-radius: .8rem;
+  box-shadow: 4px 2px 30px rgba(0, 0, 0, 0.425);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.differences div h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1.36rem, 2.5dvw, 3rem);
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.differences div article ul li {
+  font-family: 'Poppins';
+  line-height: 1.7rem;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.differences div button {
+  background-color: transparent;
+  font-size: 1.1rem;
+  padding: .4rem 1rem;
+  border-radius: .5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  border: 2px solid #4B5F44;
+  color: #4B5F44;
+  font-weight: bold;
+}
+
+.differences div button:hover {
+  background-color: #4B5F44;
+  color: white;
+}
+
+#representative-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 0.4rem;
+  border: 3px solid whitesmoke;
+  box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.425);
+  margin: 1rem auto;
+  display: block;
+}
+
+@media (max-width: 975px) {
+  #representative-img {
+    max-width: 93%;
+  }
+}
+
+@media (max-width: 440px) {
+  .differences {
+    padding: 2rem 1rem;
+  }
+
+  .differences div article ul li {
+    font-size: .98rem;
+    text-wrap: wrap;
+  }
+
+  .differences div button {
+    font-size: 1rem;
+  }
+}
