@@ -28,6 +28,12 @@
   font-size: 1.2rem;
 }
 
+.differences div section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .differences div button {
   background-color: transparent;
   font-size: 1.1rem;
@@ -63,7 +69,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 530px) {
   .differences {
     padding: 2rem 1rem;
   }
@@ -75,5 +81,12 @@
 
   .differences div button {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1270px) {
+  .differences div section {
+    text-align: center;
+    width: 100%;
   }
 }
