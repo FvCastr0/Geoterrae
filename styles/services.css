@@ -1,20 +1,32 @@
 .services {
-  margin: 1.5rem 4rem;
+  margin: 3rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
 }
 
-.services h1 {
+.services-text h1 {
   font-size: clamp(1.5rem, 2.5dvw, 3rem);
   font-family: 'Raleway', sans-serif;
-  margin: 2.4rem 0;
+  margin-bottom: 1rem;
 }
 
-.services div {
+.services-text legend {
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+.services-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 5rem;
+  gap: 3rem;
 }
 
-.services div article {
+.services-cards article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,13 +40,12 @@
   border-bottom-right-radius: 3rem;
 }
 
-
-.services div article img {
+.services-cards article img {
   width: 8rem;
   margin-bottom: .5rem;
 }
 
-.services div article button {
+.services-cards article button {
   padding: .3rem;
   border-radius: .3rem;
   border: 1px solid #4B5F44;
@@ -42,4 +53,24 @@
   cursor: pointer;
   background-color: #4B5F44;
   color: white;
+}
+
+@media (max-width: 900px) {
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  .services {
+    justify-content: center;
+  }
 }
