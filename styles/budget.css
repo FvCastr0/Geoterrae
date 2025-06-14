@@ -1,5 +1,5 @@
  .budget {
-   padding: 4rem 4rem;
+   padding: 4rem;
    background-color: #F2E9DC;
  }
 
@@ -95,6 +95,41 @@
    }
  }
 
+
+ @media (max-width: 400px) {
+   .budget {
+     padding: 2rem 1rem;
+   }
+
+   .budget div {
+     flex-direction: column;
+     gap: 2rem;
+   }
+
+   .budget div legend {
+     margin-top: 0;
+     margin-right: 0;
+     font-size: 1rem;
+     text-align: left;
+   }
+
+   .budget form {
+     width: 100%;
+     padding: 1.5rem;
+     box-sizing: border-box;
+     box-shadow: none;
+   }
+
+   .budget input,
+   .budget select {
+     font-size: 0.95rem;
+   }
+
+   .budget button {
+     font-size: 0.95rem;
+     padding: 0.6rem;
+   }
+ }
 
  @media (max-width: 380px) {
    .budget {
