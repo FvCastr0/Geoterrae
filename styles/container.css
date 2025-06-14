@@ -66,20 +66,23 @@
 }
 
 @media (max-width: 620px) {
-  .container article h1 {
-    font-size: 1.9rem;
+  .container {
+    margin: 1.5rem 2rem;
   }
-}
-
-@media (max-width: 520px) {
 
   .container div {
     flex-wrap: wrap;
   }
 
-  .container {
-    margin: 1.5rem 2rem;
+  .container article h1 {
+    font-size: 1.7rem;
   }
+
+  .container article h2 {
+    margin-top: 2rem;
+    max-width: 70dvw;
+  }
+
 
   .container img {
     width: 19rem;
