@@ -58,7 +58,7 @@
           >
             Contato
           </button>
-          <a href="#">ou clique aqui e preencha um formulário</a>
+          <a href="#form-budget">ou clique aqui e preencha um formulário</a>
         </div>
       </article>
       <img src="./assets/img/Illustration.png" alt="Ilustração" />
@@ -93,7 +93,9 @@
               </li>
             </ul>
           </article>
-          <button>Faça seu orçamento agora!</button>
+          <button onclick="window.location.href = '#form-budget'">
+            Faça seu orçamento agora!
+          </button>
         </section>
 
         <img
@@ -152,36 +154,41 @@
     </section>
 
     <section class="budget">
-      <h1>Faça um orçamento agora</h1>
+      <h1>Faça seu orçamento agora</h1>
       <div>
         <article>
           <legend>
             Preencha o formulário abaixo e receba um orçamento personalizado
-            para o seu projeto. Se preferir, fale diretamente conosco pelo
-            WhatsApp. Na Geoterrae, cada proposta é feita com base na sua
-            necessidade, sempre com agilidade, transparência e excelência
+            para o seu projeto. Na Geoterrae, cada proposta é feita com base na
+            sua necessidade, sempre com agilidade, transparência e excelência
             técnica.
           </legend>
-          <a href="">Envie-nos uma mensagem</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0'"
+            ><span>Se preferir, fale diretamente conosco pelo WhatsApp.</span>
+            <br />Entre em contato</a
+          >
         </article>
 
-        <form>
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required />
+        <form onsubmit="handleSubmitForm(event)" id="form-budget">
+          <label for="name">Nome</label>
+          <input type="text" id="nome" name="name" required />
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
 
-          <label for="whatsapp">Telefone/Whatsapp</label>
-          <input type="tel" id="whatsapp" name="whatsapp" required />
+          <label for="contact">Telefone/Whatsapp</label>
+          <input type="tel" id="contact" name="whatsapp" required />
 
           <label for="servico">Serviço pretendido</label>
-          <select id="servico" name="servico">
+          <select id="service" name="servico">
             <option value="">Selecione um serviço</option>
-            <option>Sondagens Geotécnicas</option>
-            <option>Ensaios de Solo</option>
-            <option>Consultoria Técnica</option>
-            <option>Levantamento topográfico</option>
+            <option value="Sondagens Geotécnicas">Sondagens Geotécnicas</option>
+            <option value="Ensaios de Solo">Ensaios de Solo</option>
+            <option value="Consultoria Técnica">Consultoria Técnica</option>
+            <option value="Levantamento topográfico">
+              Levantamento topográfico
+            </option>
           </select>
 
           <button type="submit">Enviar</button>
@@ -196,7 +203,9 @@
             Quer fazer parte da nossa equipe?<br />Envie seu currículo para o
             nosso email: <br />
             <span>
-              <a href="mailto:example@email.com">example@email.com</a></span
+              <a href="mailto:adm.geoterrae@gmail.com"
+                >adm.geoterrae@gmail.com</a
+              ></span
             >
           </h2>
         </div>
@@ -227,4 +236,6 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="/assets/main.js"></script>
 </html>
