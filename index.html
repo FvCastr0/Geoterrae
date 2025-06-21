@@ -12,6 +12,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Geoterrae Engenharia" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -24,7 +25,18 @@
     <meta property="og:url" content="https://www.geoterrae.com.br/" />
     <meta
       property="og:image"
-      content="https://www.geoterrae.com.br/assets/img/og-thumbnail.jpg"
+      content="https://www.geoterrae.com.br/assets/img/illustration.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Geoterrae | Engenharia Geotécnica" />
+    <meta
+      name="twitter:description"
+      content="Empresa especializada em sondagens, ensaios e projetos geotécnicos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.geoterrae.com.br/assets/img/illustration.png"
     />
 
     <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
@@ -74,12 +86,13 @@
           especialistas, a Geoterrae entrega soluções modernas e eficientes para
           a construção civil.
         </h2>
-        <legend>
+        <p>
           Fale com a gente para solicitar um orçamento ou envie por aqui mesmo!
-        </legend>
+        </p>
         <div>
           <button
             onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0'"
+            aria-label="Botão entrar em contato"
           >
             Contato
           </button>
@@ -118,7 +131,10 @@
               </li>
             </ul>
           </article>
-          <button onclick="window.location.href = '#form-budget'">
+          <button
+            onclick="window.location.href = '#form-budget'"
+            aria-label="Faça seu orçamento"
+          >
             Faça seu orçamento agora!
           </button>
         </section>
@@ -134,13 +150,13 @@
     <section class="services" id="servicos">
       <div class="services-text">
         <h1>Nossos serviços</h1>
-        <legend>
+        <p>
           Atuamos com excelência em diversas frentes da engenharia geotécnica,
           oferecendo serviços especializados e soluções técnicas sob medida para
           cada projeto. Contamos com uma equipe qualificada e equipamentos
           modernos para garantir precisão, segurança e eficiência em todas as
           etapas da sua obra.
-        </legend>
+        </p>
       </div>
 
       <div class="services-cards">
@@ -182,12 +198,12 @@
       <h1>Faça seu orçamento agora</h1>
       <div>
         <article>
-          <legend>
+          <p>
             Preencha o formulário abaixo e receba um orçamento personalizado
             para o seu projeto. Na Geoterrae, cada proposta é feita com base na
             sua necessidade, sempre com agilidade, transparência e excelência
             técnica.
-          </legend>
+          </p>
           <a
             href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0'"
             ><span>Se preferir, fale diretamente conosco pelo WhatsApp.</span>
@@ -205,6 +221,17 @@
           <label for="contact">Telefone/Whatsapp</label>
           <input type="tel" id="contact" name="whatsapp" required />
 
+          <label for="localization">Local do serviço</label>
+          <input type="text" id="localization" name="localization" required />
+
+          <label for="description">Detalhes adicionais</label>
+          <textarea
+            style="resize: none"
+            id="description"
+            name="description"
+            rows="5"
+          ></textarea>
+
           <label for="servico">Serviço pretendido</label>
           <select id="service" name="servico">
             <option value="">Selecione um serviço</option>
@@ -216,7 +243,7 @@
             </option>
           </select>
 
-          <button type="submit">Enviar</button>
+          <button type="submit" aria-label="Enviar formulário">Enviar</button>
         </form>
       </div>
     </section>
@@ -237,30 +264,33 @@
 
         <div>
           <div>
-            <legend>
+            <p>
               Preferência por contato direto? Ligue para nós em<br />
               <a href="tel:+5532998083371">(32) 99808-3371</a>
-            </legend>
+            </p>
           </div>
 
           <div>
-            <legend class="localization">
+            <p class="localization">
               <img
                 src="/assets/img/icons/position-interface-icon-svgrepo-com.svg"
                 alt="Icone localização"
                 id="icon"
               />Rua Sampaio, 398 - Centro, Juiz de Fora - MG, 36010-359
-            </legend>
+            </p>
           </div>
         </div>
       </article>
 
       <div class="rights">
         <img src="/assets/img/logo.png" alt="Logo" id="logo" />
-        <legend>&copy; 2025 Todos direitos reservados.</legend>
+        <p>&copy; 2025 Todos direitos reservados.</p>
       </div>
     </footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="/assets/main.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    defer
+  ></script>
+  <script src="/assets/main.js" defer></script>
 </html>

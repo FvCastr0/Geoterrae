@@ -3,6 +3,8 @@ function handleSubmitForm(event) {
 
   const name = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
+  const description = document.getElementById("description").value;
+  const localization = document.getElementById("localization").value;
   const contact = document.getElementById("contact").value;
   const service = document.getElementById("service").value;
 
@@ -16,6 +18,8 @@ function handleSubmitForm(event) {
   const templateParams = {
     name: name,
     email: email,
+    description: description,
+    localization: localization,
     contact: contact,
     service: service
   };
