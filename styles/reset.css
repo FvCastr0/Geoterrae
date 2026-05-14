@@ -1,84 +1,51 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-p,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+:root {
+  /* Colors adjusted for AAA/AA strong contrast */
+  --color-primary: #2d3b28; /* Darker green */
+  --color-primary-light: #4b5f44;
+  --color-secondary: #5a3d20; /* Darker brown */
+  --color-secondary-light: #9c744f;
+  --color-bg: #fdfcfa;
+  --color-bg-alt: #f1ebd9;
+  --color-text: #111111;
+  --color-text-light: #333333;
+  --color-white: #ffffff;
+  --color-border: #cccccc;
+  
+  /* Focus outline color */
+  --color-focus: #005fcc;
+  
+  /* Typography */
+  --font-base: 'Raleway', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  
+  /* Sizing for accessibility */
+  --text-base: 1.125rem; /* 18px */
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.5rem;
+  
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  --radius: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -87,41 +54,30 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
+html {
+  font-size: 112.5%; /* 18px base text */
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
-ol,
-ul {
+body {
+  line-height: 1.5;
+  font-family: var(--font-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
 }
 
 table {
@@ -129,6 +85,16 @@ table {
   border-spacing: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

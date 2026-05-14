@@ -1,296 +1,359 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Geoterrae | Engenharia geotécnica em Juiz de Fora</title>
-    <meta
-      name="description"
-      content="Soluções modernas e eficientes em geotecnia, sondagens e levantamentos topográficos. Atendemos Juiz de Fora e região com excelência técnica."
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Geoterrae Engenharia" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Geoterrae | Engenharia geotécnica em Juiz de Fora"
-    />
-    <meta
-      property="og:description"
-      content="Soluções modernas e eficientes em geotecnia e sondagens. Solicite seu orçamento personalizado."
-    />
-    <meta property="og:url" content="https://www.geoterrae.com.br/" />
-    <meta
-      property="og:image"
-      content="https://www.geoterrae.com.br/assets/img/illustration.png"
-    />
+  <title>Geoterrae | Engenharia Geotécnica em Juiz de Fora</title>
+  <meta name="description"
+    content="Soluções modernas e eficientes em geotecnia, sondagens e levantamentos topográficos. Atendemos Juiz de Fora e região com excelência técnica." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Geoterrae Engenharia" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Geoterrae | Engenharia Geotécnica" />
-    <meta
-      name="twitter:description"
-      content="Empresa especializada em sondagens, ensaios e projetos geotécnicos."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.geoterrae.com.br/assets/img/illustration.png"
-    />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Geoterrae | Engenharia Geotécnica em Juiz de Fora" />
+  <meta property="og:description"
+    content="Soluções modernas e eficientes em geotecnia e sondagens. Solicite seu orçamento personalizado." />
+  <meta property="og:url" content="https://www.geoterrae.com.br/" />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1541888081622-15cb3ebb3685?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" />
 
-    <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Geoterrae | Engenharia Geotécnica" />
+  <meta name="twitter:description" content="Empresa especializada em sondagens, ensaios e projetos geotécnicos." />
+  <meta name="twitter:image"
+    content="https://images.unsplash.com/photo-1541888081622-15cb3ebb3685?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/container.css" />
-    <link rel="stylesheet" href="styles/services.css" />
-    <link rel="stylesheet" href="styles/differences.css" />
-    <link rel="stylesheet" href="styles/budget.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
-  </head>
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
 
-  <body>
-    <nav class="navbar">
-      <img src="./assets/img/logo.png" alt="Logo" />
-      <ul>
-        <li><a href="#servicos">Serviços</a></li>
-        <li>
-          <a
-            href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0"
-            >Contato</a
-          >
-        </li>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-        <li><a href="#trabalhe-conosco">Trabalhe conosco</a></li>
-      </ul>
-    </nav>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
 
-    <main class="container">
-      <article>
-        <h1>
-          Soluções modernas e eficientes <br />
+<body>
+  <!-- Acessibilidade: Skip Link -->
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" aria-label="Navegação principal">
+    <img src="./assets/img/logo.png" alt="Geoterrae Engenharia - Logotipo" class="navbar__logo" />
+
+    <button class="navbar__toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu"
+      id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar__menu" id="nav-menu" role="navigation">
+      <a href="#servicos">Serviços</a>
+      <a href="#orcamento">Orçamento</a>
+      <a href="#trabalhe-conosco">Trabalhe Conosco</a>
+      <a href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0"
+        class="nav-cta" target="_blank" rel="noopener noreferrer">
+        📞 Fale Conosco
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <main id="conteudo-principal">
+    <section class="hero">
+      <div class="hero__content fade-in">
+        <h1 class="hero__title">
+          Soluções modernas e eficientes<br />
           <span>em geotecnia e sondagens</span>
         </h1>
-        <h2>
-          A Geoterrae é uma empresa de engenharia localizada em Juiz de Fora,
-          Minas Gerais, especializada em sondagens e geotecnia. Com uma equipe
-          técnica de alto nível, formada por engenheiros, mestres e
-          especialistas, a Geoterrae entrega soluções modernas e eficientes para
-          a construção civil.
-        </h2>
-        <p>
-          Fale com a gente para solicitar um orçamento ou envie por aqui mesmo!
+        <p class="hero__subtitle">
+          A Geoterrae é uma empresa de engenharia em Juiz de Fora, Minas
+          Gerais, especializada em sondagens e geotecnia. Com engenheiros,
+          mestres e especialistas, entregamos soluções modernas e seguras
+          para a construção civil.
         </p>
-        <div>
-          <button
-            onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0'"
-            aria-label="Botão entrar em contato"
-          >
-            Contato
-          </button>
-          <a href="#form-budget">ou clique aqui e preencha um formulário</a>
+        <div class="hero__actions">
+          <a href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0"
+            class="btn btn--whatsapp btn--large" target="_blank" rel="noopener noreferrer"
+            aria-label="Falar pelo WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Falar pelo WhatsApp
+          </a>
+          <a href="#orcamento" class="btn btn--outline btn--large">
+            Solicitar Orçamento
+          </a>
         </div>
-      </article>
-      <img src="./assets/img/Illustration.png" alt="Ilustração" />
-    </main>
+      </div>
+      <img src="assets/img/retrato-de-engenheiros-durante-as-horas-de-trabalho-no-local-de-trabalho.jpg"
+        alt="Engenheiros de campo atuando em obra geotécnica" class="hero__img fade-in" />
+    </section>
 
-    <section class="differences">
-      <div>
-        <section>
-          <h1>Por que escolher a Geoterrae?</h1>
-          <article>
-            <ul>
-              <li>
-                <span
-                  ><img
-                    src="/assets/img/icons/check.png"
-                    alt="Check Icone" /></span
-                >Comprometimento total com o cliente
-              </li>
-              <li>
-                <span
-                  ><img
-                    src="/assets/img/icons/check.png"
-                    alt="Check Icone" /></span
-                >Mais segurança para suas edificações
-              </li>
-              <li>
-                <span
-                  ><img
-                    src="/assets/img/icons/check.png"
-                    alt="Check Icone" /></span
-                >Alta performance nas construções
-              </li>
-            </ul>
-          </article>
-          <button
-            onclick="window.location.href = '#form-budget'"
-            aria-label="Faça seu orçamento"
-          >
-            Faça seu orçamento agora!
-          </button>
-        </section>
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section class="differentials" aria-labelledby="diff-title">
+      <div class="section-header fade-in">
+        <span class="section-header__label">Nossos Diferenciais</span>
+        <h2 class="section-header__title" id="diff-title">
+          Por que escolher a Geoterrae?
+        </h2>
+      </div>
+
+      <div class="differentials__grid">
+        <div class="differentials__content fade-in">
+          <div class="differentials__list">
+            <div class="differentials__item">
+              <div class="differentials__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+              <div class="differentials__text">
+                <h3>Comprometimento Total</h3>
+                <p>Dedicação completa com o cliente em cada etapa do projeto.</p>
+              </div>
+            </div>
+
+            <div class="differentials__item">
+              <div class="differentials__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="differentials__text">
+                <h3>Segurança Garantida</h3>
+                <p>Mais segurança para suas edificações com laudos técnicos confiáveis.</p>
+              </div>
+            </div>
+
+            <div class="differentials__item">
+              <div class="differentials__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+              <div class="differentials__text">
+                <h3>Alta Performance</h3>
+                <p>Equipamentos modernos e equipe técnica de alto nível.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#orcamento" class="btn btn--primary btn--large">
+            Faça seu orçamento agora
+          </a>
+        </div>
 
         <img
-          src="/assets/img/retrato-de-engenheiros-durante-as-horas-de-trabalho-no-local-de-trabalho.jpg"
-          alt="Imagem representativa"
-          id="representative-img"
-        />
+          src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Engenheiros analisando equipamentos topográficos e plantas" class="differentials__img fade-in" />
       </div>
     </section>
 
-    <section class="services" id="servicos">
-      <div class="services-text">
-        <h1>Nossos serviços</h1>
-        <p>
-          Atuamos com excelência em diversas frentes da engenharia geotécnica,
-          oferecendo serviços especializados e soluções técnicas sob medida para
-          cada projeto. Contamos com uma equipe qualificada e equipamentos
-          modernos para garantir precisão, segurança e eficiência em todas as
-          etapas da sua obra.
+    <!-- ========== SERVIÇOS ========== -->
+    <section class="services" id="servicos" aria-labelledby="services-title">
+      <div class="section-header fade-in">
+        <span class="section-header__label">O que fazemos</span>
+        <h2 class="section-header__title" id="services-title">
+          Nossos Serviços
+        </h2>
+        <p class="section-header__desc">
+          Atuamos com excelência em diversas frentes da engenharia
+          geotécnica, oferecendo serviços especializados e soluções técnicas
+          sob medida para cada projeto.
         </p>
       </div>
 
-      <div class="services-cards">
-        <article>
-          <img
-            src="/assets/img/icons/drill-svgrepo-com.svg"
-            alt="Sondagens Geotécnicas Icone"
-          />
-          <h2>Sondagens Geotécnicas</h2>
-        </article>
-
-        <article>
-          <img
-            src="/assets/img/icons/soil-temperature-svgrepo-com.svg"
-            alt="Ensaios Tecnológicos Icone"
-          />
-          <h2>Ensaios Tecnológicos</h2>
-        </article>
-
-        <article>
-          <img
-            src="/assets/img/icons/soil-svgrepo-com.svg"
-            alt="Projetos Geotécnicos Icone"
-          />
-          <h2>Projetos Geotécnicos</h2>
-        </article>
-
-        <article>
-          <img
-            src="/assets/img/icons/drone-svgrepo-com.svg"
-            alt="Levantamento topográfico Icone"
-          />
-          <h2>Levantamento topográfico</h2>
-        </article>
-      </div>
-    </section>
-
-    <section class="budget">
-      <h1>Faça seu orçamento agora</h1>
-      <div>
-        <article>
-          <p>
-            Preencha o formulário abaixo e receba um orçamento personalizado
-            para o seu projeto. Na Geoterrae, cada proposta é feita com base na
-            sua necessidade, sempre com agilidade, transparência e excelência
-            técnica.
+      <div class="services__grid">
+        <article class="service-card fade-in">
+          <div class="service-card__icon">
+            <img src="/assets/img/icons/drill-svgrepo-com.svg" alt="" aria-hidden="true" />
+          </div>
+          <h3 class="service-card__title">Sondagens Geotécnicas</h3>
+          <p class="service-card__desc">
+            Investigação do subsolo para fundações seguras e econômicas.
           </p>
-          <a
-            href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0'"
-            ><span>Se preferir, fale diretamente conosco pelo WhatsApp.</span>
-            <br />Entre em contato</a
-          >
         </article>
 
-        <form onsubmit="handleSubmitForm(event)" id="form-budget">
-          <label for="name">Nome</label>
-          <input type="text" id="nome" name="name" required />
+        <article class="service-card fade-in">
+          <div class="service-card__icon">
+            <img src="/assets/img/icons/soil-temperature-svgrepo-com.svg" alt="" aria-hidden="true" />
+          </div>
+          <h3 class="service-card__title">Ensaios Tecnológicos</h3>
+          <p class="service-card__desc">
+            Análise de solo e materiais com precisão laboratorial.
+          </p>
+        </article>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+        <article class="service-card fade-in">
+          <div class="service-card__icon">
+            <img src="/assets/img/icons/soil-svgrepo-com.svg" alt="" aria-hidden="true" />
+          </div>
+          <h3 class="service-card__title">Projetos Geotécnicos</h3>
+          <p class="service-card__desc">
+            Projetos de contenção, fundações e estabilidade de encostas.
+          </p>
+        </article>
 
-          <label for="contact">Telefone/Whatsapp</label>
-          <input type="tel" id="contact" name="whatsapp" required />
-
-          <label for="localization">Local do serviço</label>
-          <input type="text" id="localization" name="localization" required />
-
-          <label for="description">Detalhes adicionais</label>
-          <textarea
-            style="resize: none"
-            id="description"
-            name="description"
-            rows="5"
-          ></textarea>
-
-          <label for="servico">Serviço pretendido</label>
-          <select id="service" name="servico">
-            <option value="">Selecione um serviço</option>
-            <option value="Sondagens Geotécnicas">Sondagens Geotécnicas</option>
-            <option value="Ensaios de Solo">Ensaios de Solo</option>
-            <option value="Consultoria Técnica">Consultoria Técnica</option>
-            <option value="Levantamento topográfico">
-              Levantamento topográfico
-            </option>
-          </select>
-
-          <button type="submit" aria-label="Enviar formulário">Enviar</button>
-        </form>
+        <article class="service-card fade-in">
+          <div class="service-card__icon">
+            <img src="/assets/img/icons/drone-svgrepo-com.svg" alt="" aria-hidden="true" />
+          </div>
+          <h3 class="service-card__title">Levantamento Topográfico</h3>
+          <p class="service-card__desc">
+            Mapeamento de terrenos com tecnologia de alta precisão.
+          </p>
+        </article>
       </div>
     </section>
 
-    <footer class="footer">
-      <article>
-        <div class="contact" id="trabalhe-conosco">
-          <h2>
-            Quer fazer parte da nossa equipe?<br />Envie seu currículo para o
-            nosso email: <br />
-            <span>
-              <a href="mailto:adm.geoterrae@gmail.com"
-                >adm.geoterrae@gmail.com</a
-              ></span
-            >
-          </h2>
-        </div>
-
-        <div>
-          <div>
-            <p>
-              Preferência por contato direto? Ligue para nós em<br />
-              <a href="tel:+5532998083371">(32) 99808-3371</a>
-            </p>
-          </div>
-
-          <div>
-            <p class="localization">
-              <img
-                src="/assets/img/icons/position-interface-icon-svgrepo-com.svg"
-                alt="Icone localização"
-                id="icon"
-              />Rua Sampaio, 398 - Centro, Juiz de Fora - MG, 36010-359
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <div class="rights">
-        <img src="/assets/img/logo.png" alt="Logo" id="logo" />
-        <p>&copy; 2025 Todos direitos reservados.</p>
+    <!-- ========== ORÇAMENTO ========== -->
+    <section class="budget" id="orcamento" aria-labelledby="budget-title">
+      <div class="section-header fade-in">
+        <span class="section-header__label">Orçamento</span>
+        <h2 class="section-header__title" id="budget-title">
+          Solicite seu orçamento
+        </h2>
+        <p class="section-header__desc">
+          Preencha o formulário e receba uma proposta personalizada.
+          Cada orçamento é feito com agilidade, transparência e excelência técnica.
+        </p>
       </div>
-    </footer>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    defer
-  ></script>
+
+      <div class="budget__grid">
+        <div class="budget__info fade-in">
+          <p>
+            Na Geoterrae, cada proposta é elaborada com base na sua necessidade
+            específica. Nosso time analisa seu projeto para oferecer a melhor
+            solução técnica com o melhor custo-benefício.
+          </p>
+          <div class="budget__whatsapp-box">
+            <p>Prefere falar diretamente conosco?</p>
+            <a href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0"
+              class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="budget__form-wrapper fade-in">
+          <form onsubmit="handleSubmitForm(event)" id="form-budget" novalidate>
+            <div class="form-group">
+              <label for="nome">Seu nome completo</label>
+              <input type="text" id="nome" name="name" placeholder="Ex: Maria da Silva" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Seu e-mail</label>
+              <input type="email" id="email" name="email" placeholder="Ex: maria@email.com" required
+                autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact">Telefone ou WhatsApp</label>
+              <input type="tel" id="contact" name="whatsapp" placeholder="Ex: (32) 99999-9999" required
+                autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="localization">Local do serviço</label>
+              <input type="text" id="localization" name="localization" placeholder="Ex: Juiz de Fora - MG" required />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Qual serviço você precisa?</label>
+              <select id="service" name="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option value="Sondagens Geotécnicas">Sondagens Geotécnicas</option>
+                <option value="Ensaios de Solo">Ensaios de Solo</option>
+                <option value="Consultoria Técnica">Consultoria Técnica</option>
+                <option value="Levantamento topográfico">Levantamento Topográfico</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Detalhes adicionais (opcional)</label>
+              <textarea id="description" name="description" rows="4"
+                placeholder="Descreva brevemente o que você precisa..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full btn--large"
+              aria-label="Enviar formulário de orçamento">
+              Enviar Orçamento
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="trabalhe-conosco">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>Trabalhe Conosco</h3>
+        <p>
+          Quer fazer parte da nossa equipe? Envie seu currículo:
+        </p>
+        <a href="mailto:adm.geoterrae@gmail.com">
+          📧 adm.geoterrae@gmail.com
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contato</h3>
+        <a href="tel:+5532998083371">
+          📞 (32) 99808-3371
+        </a>
+        <p style="margin-top: .5rem;">
+          📍 Rua Sampaio, 398 — Centro<br />
+          Juiz de Fora — MG, 36010-359
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Horário</h3>
+        <p>
+          Segunda a Sexta<br />
+          08:00 — 18:00
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <img src="/assets/img/logo.png" alt="Geoterrae Logotipo" class="footer__logo" />
+      <p class="footer__copy">&copy; 2025 Geoterrae. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://api.whatsapp.com/send/?phone=5532998083371&text=Ol%C3%A1%21+Estou+interessado+nos+servi%C3%A7os+da+Geoterrae.&type=phone_number&app_absent=0"
+    class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- Toast notification container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
   <script src="/assets/main.js" defer></script>
+</body>
+
 </html>
